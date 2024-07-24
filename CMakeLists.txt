@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10)
+project(Opencv-YOLO)
+find_package(OpenCV REQUIRED)
+add_executable(Opencv-YOLO simpleopencv.cpp)
+target_link_libraries(Opencv-YOLO ${OpenCV_LIBS})
